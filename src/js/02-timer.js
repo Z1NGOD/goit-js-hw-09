@@ -18,7 +18,7 @@ const options = {
   minuteIncrement: 1,
     onClose(selectedDates) {
         if (selectedDates[0] <= options.defaultDate) {
-            Notiflix.Notify.failure("請選擇未來的日期");
+            Notiflix.Notify.failure("Обери дату майбутнього!!!");
         }
         else if (selectedDates[0] > options.defaultDate) {
             buttonStart.removeAttribute('disabled');
